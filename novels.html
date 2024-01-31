@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novels</title>
+    <link rel="stylesheet" href="navpages.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Laraib Book library</label>
+        <ul>
+          <li><a class="active" href="dasboard.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="dasboard.html">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li> <button class="back-btn" onclick="goBack()">BACK</button></li>
+        </ul>
+      </nav>
+      <h1 class="heading">Novels Collection</h1>
+      <div class="card-container">
+        <div class="card">
+            <img src="./images/n1.jpg" alt="Card Image 1">
+            <h2>Read Book</h2>
+            <p>Lorem ipsum</p>
+        </div>
+        <div class="card">
+            <img src="./images/n2.jpg" alt="Card Image 2">
+            <h2>Read Book</h2>
+            <p>Lorem ipsum</p>
+        </div>
+        <div class="card">
+            <img src="./images/n3.jpg" alt="Card Image 3">
+            <h2>Read Book</h2>
+            <p>Lorem ipsum</p>
+        </div>
+        <div class="card">
+            <img src="./images/n4.jpg" alt="Card Image 4">
+            <h2>Read Book</h2>
+            <p>Lorem ipsum</p>
+        </div>
+    </div>
+      <script>
+        function goBack() {
+          window.location.replace('dasboard.html')
+      }
+  </script>
+</body>
+
+</html>

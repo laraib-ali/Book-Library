@@ -1,0 +1,85 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: #fccb70;
+          
+        }
+        .heading{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+      .container{
+        border: 2px solid blanchedalmond;
+       
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 50px auto;
+}
+img {
+    width: 150px;
+    margin: 0 auto;
+}
+input {
+    width: 150px;
+    color: brown;
+    background-color: #DCE1EB;
+    border: 0;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 6px auto;
+}
+button {
+    width: 150px;
+    color: rgb(232, 222, 222);
+    background-color: brown;
+    border: 0;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 6px auto;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+ul li {
+    background-color: #dce6f9;
+    padding: 5px;
+    flex-grow: 1;
+    border-radius: 8px;
+    box-shadow: 0px 1px 4px grey;
+    text-align: center;
+}
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">Add Your Books Here</h1>
+    <div class="container">
+        <img src="./images/icons8-books-48.png" alt="" />
+        <input type="text" name="" id="title-field" placeholder="add your book">
+        <input type="text" name="" id="price-field" placeholder="add your price">
+        <button id="add-to-cart">Add to cart</button>
+        <ul id="shopping-list">
+            
+        </ul>
+    </div>
+    <script type="module" src="addBook.js"></script>
+    <script type="module" src="list.js"></script>
+</body>
+
+</html>

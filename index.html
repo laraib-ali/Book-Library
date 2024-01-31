@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laraib Book Library</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-app-compat.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore-compat.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-auth-compat.js"></script>
+</head>
+<body>
+
+<div id="loginForm">
+  <form>
+    <h2>Laraib Book Library</h2>
+    <label for="loginEmail">Email:</label>
+    <input type="email" id="loginEmail" required>
+
+    <label for="loginPassword">Password:</label>
+    <input type="password" id="loginPassword" required>
+
+    <button type="button" onclick="login()">Login</button>
+
+    <div class="toggle-form">
+      <p>Don't have an account? <a href="#" onclick="toggleForm('signupForm')">Sign up</a></p>
+    </div>
+  </form>
+</div>
+
+<div id="signupForm" style="display: none;">
+  <form>
+    <h2>Sign Up</h2>
+    <label for="signupName">Name:</label>
+    <input type="text" id="signupName" required>
+
+    <label for="signupEmail">Email:</label>
+    <input type="email" id="signupEmail" required>
+
+    <label for="signupPassword">Password:</label>
+    <input type="password" id="signupPassword" required>
+
+    <button type="button" onclick="signup()">Sign Up</button>
+
+    <div class="toggle-form">
+      <p>Already have an account? <a href="#" onclick="toggleForm('loginForm')">Login</a></p>
+    </div>
+  </form>
+</div>
+
+
+<!-- <script src="firebase.js"></script> -->
+<script src="main.js"></script>
+</body>
+</html>
